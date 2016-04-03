@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.zhou.doris.hobbynet.NavActivity"
+    tools:showIn="@layout/activity_event_stream"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/knitting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Knitting lesson"
+            android:textStyle="bold"
+            android:ems="10"
+            android:id="@+id/name"
+            android:layout_marginTop="15dp" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+            android:src="@drawable/generic_jane2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hostpic"
+            android:onClick="goToHost"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hosted by Jane Doe"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/hostname"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="bottom" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="09:00 AM, Saturday, 12 Willow Street"
+            android:ems="10"
+            android:id="@+id/time"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Come to my house to learn how to knit, or continue a project! It's fun, trust me. Plus I have tea and really good scones."
+            android:ems="10"
+            android:id="@+id/desc"
+            android:layout_marginTop="10dp" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more info"
+                android:id="@+id/more"
+                android:onClick="goToFull"
+                android:layout_marginTop="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RSVP"
+            android:id="@+id/rsvp"
+            android:onClick="RSVP"
+            android:layout_marginTop="10dp"/>
+        </TableRow>
+
+        <include layout="@layout/util_horizontal_line_section"/>
+
+        <ImageView
+            android:src="@drawable/guitar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pic2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Learn electric guitar"
+            android:textStyle="bold"
+            android:ems="10"
+            android:id="@+id/name2"
+            android:layout_marginTop="15dp" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:src="@drawable/generic_john"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostpic2"
+                android:onClick="goToHost"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hosted by John Smith"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/hostname2"
+                android:layout_below="@+id/hosttext"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="bottom" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="352dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="6:00 PM, Sunday, 21 Elm Road"
+            android:ems="10"
+            android:id="@+id/time2"
+            android:layout_below="@+id/name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Yo, come jam with me and learn to play electric guitar! Become the rockstar of your dreams, or at least slightly more interesting."
+            android:ems="10"
+            android:id="@+id/desc2"
+            android:layout_marginTop="10dp" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="more info"
+                android:id="@+id/more2"
+                android:onClick="goToFull"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RSVP"
+                android:id="@+id/rsvp2"
+                android:onClick="RSVP"
+                android:layout_marginTop="10dp"/>
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>

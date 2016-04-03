@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_stream"
+            android:icon="@drawable/ic_list_24dp"
+            android:title="Stream" />
+        <item
+            android:id="@+id/nav_upcoming"
+            android:icon="@drawable/ic_access_time_24dp"
+            android:title="Upcoming" />
+        <item
+            android:id="@+id/nav_saved"
+            android:icon="@drawable/ic_star_outline_24dp"
+            android:title="Saved" />
+
+    </group>
+
+
+    <item android:title="Categories">
+        <menu>
+            <item
+                android:id="@+id/cat_art"
+                android:icon="@drawable/ic_content_cut_24dp"
+                android:title="Arts &amp; Crafts" />
+            <item
+                android:id="@+id/cat_music"
+                android:icon="@drawable/ic_headset_24dp"
+                android:title="Music" />
+            <item
+                android:id="@+id/cat_athletics"
+                android:icon="@drawable/ic_landscape_24dp"
+                android:title="Sports &amp; Outdoors" />
+            <item
+                android:id="@+id/cat_lang"
+                android:icon="@drawable/ic_question_answer_24dp"
+                android:title="Languages" />
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Tools" />
+        </menu>
+    </item>
+
+</menu>
